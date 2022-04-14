@@ -1,10 +1,14 @@
-// import logo from "./logo.svg";
+import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
+  const title = "Welcome to the New Blog";
+  const likes = 100;
+  const link = "http://www.google.com";
+
   return (
     <div className="App">
-      {/* <header className="App-header">
+      <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -17,9 +21,17 @@ function App() {
         >
           Learn React
         </a>
-      </header> */}
+      </header>
       <div className="content">
         <h1>App Component</h1>
+        <h2>{title}</h2>
+        <p>
+          <strong>{likes}</strong>
+        </p>
+
+        <p>{"hello, ninjas"}</p>
+        <p>{Math.random() * 100}</p>
+        <a href={link}>Google</a>
       </div>
     </div>
   );
