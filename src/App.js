@@ -1,5 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
+import Navbar from "./NavBar";
+import Home from "./Home";
 
 function App() {
   const title = "Welcome to the New Blog";
@@ -8,6 +10,7 @@ function App() {
 
   return (
     <div className="App">
+      <Navbar />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -23,7 +26,7 @@ function App() {
         </a>
       </header>
       <div className="content">
-        <h1>App Component</h1>
+        <Home></Home>
         <h2>{title}</h2>
         <p>
           <strong>{likes}</strong>
